@@ -6,6 +6,11 @@ class Anagram
     @word = word
   end
   
-  
+  def match(array)
+    array.select do |e|
+      (word.split("").sort == e.split("").sort)
+    end
+    
+  end
   
 end
